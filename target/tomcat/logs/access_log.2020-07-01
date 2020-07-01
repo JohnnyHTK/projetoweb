@@ -1,0 +1,4 @@
+127.0.0.1 - - [01/Jul/2020:19:15:25 +0000] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+127.0.0.1 - - [01/Jul/2020:19:15:29 +0000] "GET /projetoweb HTTP/1.1" 302 - http-bio-8080-exec-3 0
+127.0.0.1 - - [01/Jul/2020:19:15:30 +0000] "GET /projetoweb/ HTTP/1.1" 200 52 http-bio-8080-exec-5 736
+127.0.0.1 - - [01/Jul/2020:19:15:30 +0000] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-7 0
