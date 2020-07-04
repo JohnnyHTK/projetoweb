@@ -1,9 +1,7 @@
+--mysql -u user -p 123 produtora < DDL_2.sql
+
+drop produtora;
 create schema produtora;
-
-create user 'user'@'localhost' identified by '123';
-
-GRANT ALL PRIVILEGES ON * . * TO user@'localhost';
-
 use produtora;
 
 create table pes_pessoa(
