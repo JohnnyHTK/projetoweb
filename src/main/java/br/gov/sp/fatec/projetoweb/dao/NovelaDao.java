@@ -37,6 +37,7 @@ public class NovelaDao{
         try {
             manager.getTransaction().begin();
             salvarSemCommit(novela);
+            manager.flush();
             manager.getTransaction().commit();
         }
         catch(RollbackException e) {
@@ -46,23 +47,20 @@ public class NovelaDao{
     }
     
     public void salvarSemCommit(Novela novela) {
-    	Ator ator = new Ator();
-    	Duble duble = new Duble();
-    	
     	for(Pessoa pessoa: novela.getPessoas()) {
             if(pessoa.getId() == null) {
-                if(pessoa.getId() == ator.getId()) {
-                	atorDao.salvarSemCommit(ator);
+                if(pessoa instanceof Ator) {
+                	atorDao.salvarSemCommit((Ator)pessoa);
                 }
-                else if (pessoa.getId() == duble.getId()) {
-                	dubleDao.salvarSemCommit(duble);
+                else if (pessoa instanceof Duble) {
+                	dubleDao.salvarSemCommit((Duble)pessoa);
                 }
             }
         }
     	
     	if(novela.getDiretor() != null &&
     			novela.getDiretor().getId() == null) {
-    		diretorDao.salvarSemCommit(novela.getDiretor());
+    				diretorDao.salvarSemCommit(novela.getDiretor());
     	}
     	
     	if(novela.getId() == null) {
@@ -88,10 +86,10 @@ public class NovelaDao{
 			}
 		}
 		else {
-			throw new RuntimeException("Novela n�o encontrada!");
+			throw new RuntimeException("Novela não encontrada!");
 		}
-    }   
-     
+    }    
+    
     public Novela buscarNovelaPorNome(String nome) {
     	String consulta = "select n from Novela n where fmg_nome = :nome";
         TypedQuery<Novela> query = manager.createQuery(consulta, Novela.class);

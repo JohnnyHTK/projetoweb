@@ -121,9 +121,18 @@ public class MainController extends HttpServlet {
 		FilmeDao filmeDao = new FilmeDao();
 		filmeDao.salvar(filme);
 		filmeDao.salvar(filme2);
-        
-        for( Filme f: filmeDao.buscarFilmesPorDiretor("Lula da Silva")) {
-			resp.getWriter().print("Nome: " + f.getNome());
+		
+		//novelaDao.buscarNovelaPorDiretorPorDuracao("Lula da Silva", 3.5f);
+		
+		//filmeDao.buscarFilmePorDublePorDuracao("Victor Cardial", 3f);
+		
+		//atorDao.buscarAtorPorFilmagensParticipadasPorFama("Carminha", "Musica");
+		
+		
+		//List<Filme> filmes;
+		
+		for( Filme f: filmeDao.buscarFilmesPorDiretor("Lula da Silva")) {
+			resp.getWriter().print("Nome: " + f.getNome() + "\n");
 		}
         
     }

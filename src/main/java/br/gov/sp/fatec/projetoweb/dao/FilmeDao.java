@@ -37,6 +37,7 @@ public class FilmeDao {
         try {
             manager.getTransaction().begin();
             salvarSemCommit(filme);
+            manager.flush();
             manager.getTransaction().commit();
         }
         catch(RollbackException e) {
@@ -46,16 +47,14 @@ public class FilmeDao {
     }
     
     public void salvarSemCommit(Filme filme) {
-    	Ator ator = new Ator();
-    	Duble duble = new Duble();
-    	
+
     	for(Pessoa pessoa: filme.getPessoas()) {
             if(pessoa.getId() == null) {
-                if(pessoa.getId() == ator.getId()) {
-                	atorDao.salvarSemCommit(ator);
+                if(pessoa instanceof Ator) {
+                	atorDao.salvarSemCommit((Ator)pessoa);
                 }
-                else if (pessoa.getId() == duble.getId()) {
-                	dubleDao.salvarSemCommit(duble);
+                else if (pessoa instanceof Duble) {
+                	dubleDao.salvarSemCommit((Duble)pessoa);
                 }
             }
         }
@@ -88,7 +87,7 @@ public class FilmeDao {
 			}
 		}
 		else {
-			throw new RuntimeException("Filme n�o encontrado!");
+			throw new RuntimeException("Filme não encontrado!");
 		}
 	}
 	

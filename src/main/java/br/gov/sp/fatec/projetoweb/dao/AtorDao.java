@@ -11,35 +11,35 @@ import br.gov.sp.fatec.projetoweb.entity.Ator;
 
 public class AtorDao {
 	
-	private final EntityManager manager;
+	private EntityManager manager;
 	
 	public AtorDao() {
         manager = PersistenceManager
         		.getInstance().getEntityManager();
     }
 	
-	public AtorDao(final EntityManager manager) {
+	public AtorDao(EntityManager manager) {
         this.manager = manager;
     }
 	
-	public Ator buscar(final Long id) {
+	public Ator buscar(Long id) {
 		return manager.find(Ator.class, id);
 	}
 	
-	public void salvar(final Ator ator) throws RollbackException {
+	public void salvar(Ator ator) throws RollbackException {
         try {
             manager.getTransaction().begin();
             salvarSemCommit(ator);
             manager.flush();
             manager.getTransaction().commit();
         }
-        catch(final RollbackException e) {
+        catch(RollbackException e) {
             manager.getTransaction().rollback();
             throw e;
         }
     }
     
-    public void salvarSemCommit(final Ator ator) {
+    public void salvarSemCommit(Ator ator) {
         if(ator.getId() == null) {
             manager.persist(ator);
         }
@@ -48,20 +48,20 @@ public class AtorDao {
         }
     }
     
-    public void excluir(final Long id) throws RollbackException {
-        final Ator ator = manager.find(Ator.class, id);
+    public void excluir(Long id) throws RollbackException {
+        Ator ator = manager.find(Ator.class, id);
         try {
             manager.getTransaction().begin();
             manager.remove(ator);
             manager.getTransaction().commit();
         }
-        catch(final RollbackException e) {
+        catch(RollbackException e) {
             manager.getTransaction().rollback();
             throw e;
         }
     }
     
-     public Ator buscarPorNome(String nome) {
+    public Ator buscarPorNome(String nome) {
         String consulta = "SELECT a FROM Ator a WHERE pes_nome = :nome";
         TypedQuery<Ator> query = manager.createQuery(consulta, Ator.class);
         query.setParameter("nome", nome);

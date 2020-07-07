@@ -13,7 +13,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -39,10 +38,6 @@ public class Filmagem extends Main {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "diretor")
 	private Diretor diretor;
-	
-	@OneToOne(fetch = FetchType.EAGER)
-	private Filme filme;
-
 
 	public String getNome() {
 		return nome;

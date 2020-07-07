@@ -1,7 +1,8 @@
---mysql -u user -p 123 produtora < DDL_2.sql
 
-drop produtora;
+drop database produtora;
+
 create schema produtora;
+
 use produtora;
 
 create table pes_pessoa(
@@ -15,7 +16,7 @@ create table pes_pessoa(
 );
 
 create table fmg_filmagem (
-	filme_fmg_id bigint unsigned primary key auto_increment,
+	fmg_id bigint unsigned primary key auto_increment,
     fmg_nome varchar(50) not null,
     fmg_ano date not null,
     fmg_duracao float not null,

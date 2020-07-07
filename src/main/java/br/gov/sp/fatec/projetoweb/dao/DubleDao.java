@@ -8,7 +8,7 @@ import br.gov.sp.fatec.projetoweb.entity.Duble;
 
 public class DubleDao {
 	
-private EntityManager manager;
+    private EntityManager manager;
 	
 	public DubleDao() {
         manager = PersistenceManager
@@ -44,7 +44,7 @@ private EntityManager manager;
             manager.merge(duble);
         }
     }
-	   
+	
     public void excluir(Long id) throws RollbackException {
         Duble duble = manager.find(Duble.class, id);
         try {
@@ -57,7 +57,7 @@ private EntityManager manager;
             throw e;
         }
     }
-
+    
     public Duble buscarPorNome(String nome) {
         String consulta = "select d from Duble d where pes_nome = :nome";
         TypedQuery<Duble> query = manager.createQuery(consulta, Duble.class);

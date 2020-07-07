@@ -34,3 +34,4 @@ public class Ator extends Pessoa{
 		this.filmagemParticipadas = filmagemParticipadas;
 	}	
 }
+
