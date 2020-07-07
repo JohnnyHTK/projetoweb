@@ -35,8 +35,35 @@ public class CriarAtor extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.print(atorJson);
         out.flush();
+        
     }
 
-    
-    
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+            throws ServletException, IOException {
+        // Recuperamos o corpo da requisição e transformamos o JSON em objeto
+        try{
+        ObjectMapper mapper = new ObjectMapper();
+        Ator ator = mapper.readValue(req.getReader(), Ator.class);
+        // Salvamos no Banco de Dados
+        AtorDao atorDao = new AtorDao();
+        atorDao.salvar(ator);
+        // Retornamos o registro gerado
+        String atorJson = mapper.writeValueAsString(ator);
+        resp.setContentType("application/json");
+        resp.setCharacterEncoding("UTF-8");
+        // O código 201 requer que retornemos um header de Location
+        resp.setStatus(201);
+        String location = req.getServerName() + ":" + req.getServerPort() 
+                + req.getContextPath() + "/ator?id=" + ator.getId();
+        resp.setHeader("Location", location);
+        PrintWriter out = resp.getWriter();
+        out.print(atorJson);
+        out.flush();
+        }
+        catch(Exception e) {
+            resp.setStatus(400);
+        }
+
+    }
 }

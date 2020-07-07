@@ -30,7 +30,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>BuscarAtorId</servlet-name>
-    <url-pattern>/buscar-ator-id</url-pattern>
+    <url-pattern>/ator</url-pattern>
   </servlet-mapping>
 
 
