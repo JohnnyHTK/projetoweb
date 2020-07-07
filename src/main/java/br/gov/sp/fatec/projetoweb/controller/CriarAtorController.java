@@ -35,7 +35,6 @@ public class CriarAtor extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.print(atorJson);
         out.flush();
-        
     }
 
     @Override
@@ -64,6 +63,5 @@ public class CriarAtor extends HttpServlet {
         catch(Exception e) {
             resp.setStatus(400);
         }
-
     }
 }
