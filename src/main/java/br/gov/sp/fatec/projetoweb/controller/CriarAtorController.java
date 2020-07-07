@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import br.gov.sp.fatec.projetoweb.dao.AtorDao;
 import br.gov.sp.fatec.projetoweb.entity.Ator;
 
-public class CriarAtor extends HttpServlet {
+public class CriarAtorController extends HttpServlet {
     
     private static final long serialVersionUID = 1L;
 

@@ -10,7 +10,6 @@
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/dao/NovelaDao.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Pessoa.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/dao/FilmeDao.java
-/workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/controller/DeleteAtorController.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Novela.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Duble.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/controller/BuscarFilmePorDiretorController.java
