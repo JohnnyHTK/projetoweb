@@ -8,13 +8,16 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @DiscriminatorValue(value = "D")
 public class Duble extends Pessoa {
 	
 	@Column(name = "dub_especialidade")
 	private String especialidade;
-	
+    
+    @JsonIgnore
 	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "pessoas")
 	private Set<Filmagem> filmagemParticipadas;
 

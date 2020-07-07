@@ -60,7 +60,7 @@ public class AtorDao {
             throw e;
         }
     }
-    
+        
     public Ator buscarPorNome(String nome) {
         String consulta = "SELECT a FROM Ator a WHERE pes_nome = :nome";
         TypedQuery<Ator> query = manager.createQuery(consulta, Ator.class);

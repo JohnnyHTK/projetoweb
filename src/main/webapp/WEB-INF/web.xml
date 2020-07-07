@@ -1,8 +1,9 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
 
-<web-app>
   <display-name>Archetype Created Web Application</display-name>
 
     <servlet>
@@ -12,6 +13,24 @@
   <servlet-mapping>
     <servlet-name>mainServlet</servlet-name>
     <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BuscarFilmeDiretor</servlet-name>
+    <servlet-class>br.gov.sp.fatec.projetoweb.controller.BuscarFilmePorDiretorController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuscarFilmeDiretor</servlet-name>
+    <url-pattern>/buscar-filme-diretor</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BuscarAtorId</servlet-name>
+    <servlet-class>br.gov.sp.fatec.projetoweb.controller.CriarAtor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuscarAtorId</servlet-name>
+    <url-pattern>/buscar-ator-id</url-pattern>
   </servlet-mapping>
 
 

@@ -1,1 +1,2 @@
-127.0.0.1 - - [07/Jul/2020:12:27:55 +0000] "GET /projetoweb/main HTTP/1.1" 200 32 http-bio-8080-exec-1 4009
+127.0.0.1 - - [07/Jul/2020:21:46:50 +0000] "GET /projetoweb/buscar-filme-diretor?nomeDiretor=Lula%20da%20Silva HTTP/1.1" 200 570 http-bio-8080-exec-1 3598
+127.0.0.1 - - [07/Jul/2020:21:47:52 +0000] "GET /projetoweb/buscar-filme-diretor?nomeDiretor=Sabha%20Santos HTTP/1.1" 200 12 http-bio-8080-exec-3 38

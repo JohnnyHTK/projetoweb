@@ -15,10 +15,14 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 @Table(name = "fmg_filmagem")
 @Inheritance(strategy = InheritanceType.JOINED)
 @AttributeOverride(name = "id", column = @Column(name = "fmg_id"))
+
 public class Filmagem extends Main {
 	@Column (name="fmg_nome", length = 50)
 	private String nome;
@@ -28,13 +32,14 @@ public class Filmagem extends Main {
 	
 	@Column (name="fmg_duracao")
 	private float duracao;
-	
+    
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "atu_atuacao",
 			joinColumns = { @JoinColumn(name = "fmg_id") },
 			inverseJoinColumns = { @JoinColumn(name = "pes_id") })
 	private Set<Pessoa> pessoas;
-	
+    
+    @JsonIgnore
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "diretor")
 	private Diretor diretor;

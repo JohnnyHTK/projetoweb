@@ -130,11 +130,7 @@ public class MainController extends HttpServlet {
 		
 		
 		//List<Filme> filmes;
-		
-		for( Filme f: filmeDao.buscarFilmesPorDiretor("Lula da Silva")) {
-			resp.getWriter().print("Nome: " + f.getNome() + "\n");
-		}
-        
+		        
     }
     
 }
