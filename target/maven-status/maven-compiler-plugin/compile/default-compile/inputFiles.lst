@@ -1,7 +1,7 @@
-/workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/controller/CriarAtorController.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Diretor.java
-/workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Filme.java
+/workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/controller/CriarAtorController.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Main.java
+/workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Filme.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/dao/DiretorDao.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Filmagem.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Ator.java

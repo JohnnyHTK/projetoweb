@@ -26,7 +26,7 @@
 
   <servlet>
     <servlet-name>BuscarAtorId</servlet-name>
-    <servlet-class>br.gov.sp.fatec.projetoweb.controller.CriarAtor</servlet-class>
+    <servlet-class>br.gov.sp.fatec.projetoweb.controller.CriarAtorController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>BuscarAtorId</servlet-name>
