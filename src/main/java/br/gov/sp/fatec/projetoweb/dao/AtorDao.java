@@ -3,6 +3,7 @@ package br.gov.sp.fatec.projetoweb.dao;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.RollbackException;
 import javax.persistence.TypedQuery;
 
@@ -46,6 +47,11 @@ public class AtorDao {
         else {
             manager.merge(ator);
         }
+    }
+
+    @PersistenceContext
+    public Ator update(Ator ator){
+       return manager.merge(ator);
     }
     
     public void excluir(Long id) throws RollbackException {
