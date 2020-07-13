@@ -15,11 +15,12 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.gov.sp.fatec.projetoweb.dao.UsuarioDao;
+import br.gov.sp.fatec.projetoweb.entity.Usuario;
+
 public class AuthFilter implements Filter {
     
     private ServletContext context;
-    private String username = "";
-    private String password = "";
     private String realm = "PROTECTED";
 
     @Override
@@ -28,6 +29,10 @@ public class AuthFilter implements Filter {
         this.context.log("Filtro acessado!");
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
+        
+
+
+        UsuarioDao usuarioDao= new UsuarioDao();
 
             
 
@@ -50,22 +55,40 @@ public class AuthFilter implements Filter {
                         this.context.log("Credentials: " + credentials);
                         // Separa as credenciais em usuario e senha
                         Integer p = credentials.indexOf(":");
+                        
                         if (p != -1) {
                             String _username = 
                                     credentials.substring(0, p).trim();
                             String _password = 
                                     credentials.substring(p + 1).trim();
                             // Se nao bate com configuracao retorna erro
-                            if (!username.equals(_username) || 
-                                    !password.equals(_password)) {
-                                unauthorized(response, "Bad credentials");
+                            Usuario user = usuarioDao.usernameUsuario(_username); 
+                            System.out.println("\n\n\n\n\n\nUsername enviado:"+_username);
+                            System.out.println("Senha enviado:"+_password);
+                            System.out.println("Username Banco:"+user.getLogin());
+                            System.out.println("Senha Banco:"+user.getSenha()+"\n");
+                            System.out.println("Usuario: "+user+"\n");
+                            
+                                                       
+                            if(user!=null && user.getSenha().equals(_password)){
+                                System.out.println("Entrei primeiro if\n");
+                                if (!(request.getMethod().equals("DELETE") || request.getMethod().equals("PUT")))  {
+                                    System.out.println("Entrei 2 if\n");
+                                    chain.doFilter(req, res);
+                                }else if(_username.equals("admin") && user.getSenha().equals(_password)){
+                                    System.out.println("Entrei 3 if\n");
+                                    chain.doFilter(req, res);
+                                }else{
+                                    response.sendError(403);
+                                }                                
+                            }else{
+                                unauthorized(response, "Bad credentials");      
                             }
-                            // Prossegue com a requisicao
-                            chain.doFilter(req, res);
                         } else {
                             unauthorized(response, 
-                                    "Invalid authentication token");
+                            "Invalid authentication token");
                         }
+                            
                     } catch (UnsupportedEncodingException e) {
                         throw new Error("Couldn't retrieve authentication", e);
                     }

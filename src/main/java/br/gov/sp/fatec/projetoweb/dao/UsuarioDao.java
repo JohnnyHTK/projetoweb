@@ -1,7 +1,5 @@
 package br.gov.sp.fatec.projetoweb.dao;
 
-import java.util.List;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.RollbackException;
@@ -67,11 +65,15 @@ public class UsuarioDao {
     }
          
     public Usuario usernameUsuario(String username) {
-        String consulta = "SELECT u FROM Usuario where u.login = :username";
-        TypedQuery<Usuario> query = manager.createQuery(consulta, Usuario.class);
-        query.setParameter("username", username);
+        try{
+            String consulta = "SELECT u FROM Usuario u where login = :username";
+            TypedQuery<Usuario> query = manager.createQuery(consulta, Usuario.class);
+            query.setParameter("username", username);
 
-        return query.getResultList();
+            return query.getSingleResult();
+        }catch(RollbackException e) {
+            return null;
+        }
     }
   
 }
