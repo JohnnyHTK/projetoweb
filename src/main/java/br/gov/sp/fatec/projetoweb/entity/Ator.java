@@ -7,6 +7,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
+import javax.persistence.CascadeType;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -18,7 +19,7 @@ public class Ator extends Pessoa{
 	private String fama;
     
     @JsonIgnore
-	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "pessoas")
+	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "pessoas", cascade = CascadeType.REMOVE)
 	private Set<Filmagem> filmagemParticipadas;
 
 	public String getFama() {
