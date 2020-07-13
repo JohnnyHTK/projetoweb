@@ -4,6 +4,7 @@
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Main.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/dao/DiretorDao.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/dao/UsuarioDao.java
+/workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/controller/CorsFilter.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Filmagem.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/dao/DubleDao.java
 /workspace/projetoweb/src/main/java/br/gov/sp/fatec/projetoweb/entity/Ator.java

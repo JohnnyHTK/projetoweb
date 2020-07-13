@@ -1,0 +1,5 @@
+127.0.0.1 - - [13/Jul/2020:15:12:34 +0000] "DELETE /projetoweb/ator HTTP/1.1" 400 - http-bio-8080-exec-1 283
+127.0.0.1 - - [13/Jul/2020:15:12:43 +0000] "DELETE /projetoweb/ator HTTP/1.1" 400 - http-bio-8080-exec-2 2950
+127.0.0.1 - - [13/Jul/2020:15:13:00 +0000] "PUT /projetoweb/ator HTTP/1.1" 204 - http-bio-8080-exec-3 104
+127.0.0.1 - - [13/Jul/2020:15:14:00 +0000] "POST /projetoweb/ator HTTP/1.1" 201 72 http-bio-8080-exec-5 257
+127.0.0.1 - - [13/Jul/2020:15:14:08 +0000] "GET /projetoweb/ator?id=11 HTTP/1.1" 200 72 http-bio-8080-exec-7 183

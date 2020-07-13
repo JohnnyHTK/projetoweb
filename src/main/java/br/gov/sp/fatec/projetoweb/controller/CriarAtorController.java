@@ -110,7 +110,7 @@ public class CriarAtorController extends HttpServlet {
         atorDao.salvar(atorInstancia);
         resp.setStatus(204);
         // Retornamos o registro gerado
-        /*String atorJson = mapper.writeValueAsString(ator);
+        String atorJson = mapper.writeValueAsString(ator);
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
         
@@ -119,7 +119,7 @@ public class CriarAtorController extends HttpServlet {
         resp.setHeader("Location", location);
         PrintWriter out = resp.getWriter();
         out.print(atorJson);
-        out.flush();*/
+        out.flush();
         }
         catch(Exception e) {
             resp.setStatus(400);
