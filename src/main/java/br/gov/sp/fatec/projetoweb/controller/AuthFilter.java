@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 public class AuthFilter implements Filter {
     
     private ServletContext context;
-    private String username = "admin";
-    private String password = "password_dificil";
+    private String username = "";
+    private String password = "";
     private String realm = "PROTECTED";
 
     @Override
@@ -87,12 +87,6 @@ public class AuthFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
         this.context = config.getServletContext();
         this.context.log("Filtro inicializado!");
-        this.username = config.getInitParameter("username");
-        this.password = config.getInitParameter("password");
-        String paramRealm = config.getInitParameter("realm");
-        if (paramRealm != null && paramRealm.length() > 0) {
-            this.realm = paramRealm;
-        }
     }
 
     private void unauthorized(HttpServletResponse response, String message) 

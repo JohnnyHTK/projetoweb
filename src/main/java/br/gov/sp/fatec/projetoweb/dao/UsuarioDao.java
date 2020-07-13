@@ -66,9 +66,11 @@ public class UsuarioDao {
         }
     }
          
-    public List<Usuario> listaUsuarios() {
-        String consulta = "SELECT u FROM Usuario u";
+    public Usuario usernameUsuario(String username) {
+        String consulta = "SELECT u FROM Usuario where u.login = :username";
         TypedQuery<Usuario> query = manager.createQuery(consulta, Usuario.class);
+        query.setParameter("username", username);
+
         return query.getResultList();
     }
   
