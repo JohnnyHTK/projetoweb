@@ -5,6 +5,28 @@ create schema produtora;
 
 use produtora;
 
+create table usr_usuario(
+    usr_id bigint unsigned primary key auto_increment,
+    usr_login varchar(50),
+    usr_senha varchar(50),
+    constraint use_login_uk unique (usr_login)
+);
+
+INSERT INTO usr_usuario (usr_login, usr_senha)
+VALUES ("admin","123");
+
+INSERT INTO usr_usuario (usr_login, usr_senha)
+VALUES ("jonathan","123");
+
+INSERT INTO usr_usuario (usr_login, usr_senha)
+VALUES ("lucas","123");
+
+INSERT INTO usr_usuario (usr_login, usr_senha)
+VALUES ("hercules","123");
+
+INSERT INTO usr_usuario (usr_login, usr_senha)
+VALUES ("victor","123");
+
 create table pes_pessoa(
 	pes_id bigint unsigned primary key auto_increment,
     pes_nome varchar(50),
@@ -49,3 +71,5 @@ create table atu_atuacao (
 	constraint atu_pes_fk foreign key (pes_id)
 		references pes_pessoa(pes_id)
 );
+
+

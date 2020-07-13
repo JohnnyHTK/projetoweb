@@ -2,6 +2,7 @@ package br.gov.sp.fatec.projetoweb.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,7 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import br.gov.sp.fatec.projetoweb.dao.AtorDao;
+import br.gov.sp.fatec.projetoweb.dao.UsuarioDao;
 import br.gov.sp.fatec.projetoweb.entity.Ator;
+import br.gov.sp.fatec.projetoweb.entity.Usuario;
+
 
 public class CriarAtorController extends HttpServlet {
     
@@ -25,6 +29,9 @@ public class CriarAtorController extends HttpServlet {
         // Busca trabalho com o id
         AtorDao atorDao = new AtorDao();
         Ator ator = atorDao.buscar(id);
+
+        UsuarioDao usuarioDao = new UsuarioDao();
+        List<Usuario> user = usuarioDao.listaUsuarios();
         // Usamos o Jackson para transformar o objeto em um JSON (String)
         ObjectMapper mapper = new ObjectMapper();
         String atorJson = mapper.writeValueAsString(ator);
@@ -33,6 +40,7 @@ public class CriarAtorController extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         resp.setStatus(200);
         PrintWriter out = resp.getWriter();
+        System.out.println(user);
         out.print(atorJson);
         out.flush();
     }
