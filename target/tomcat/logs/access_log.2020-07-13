@@ -1,5 +1,8 @@
-127.0.0.1 - - [13/Jul/2020:17:39:40 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 401 975 http-bio-8080-exec-1 2503
-127.0.0.1 - - [13/Jul/2020:17:39:48 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 500 1597 http-bio-8080-exec-3 156
-127.0.0.1 - - [13/Jul/2020:17:40:03 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 401 975 http-bio-8080-exec-4 2
-127.0.0.1 - - [13/Jul/2020:17:40:06 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 200 67 http-bio-8080-exec-6 303
-127.0.0.1 - - [13/Jul/2020:17:40:14 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 200 67 http-bio-8080-exec-8 25
+127.0.0.1 - - [13/Jul/2020:17:46:54 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 401 975 http-bio-8080-exec-1 2542
+127.0.0.1 - - [13/Jul/2020:17:46:57 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 401 981 http-bio-8080-exec-3 167
+127.0.0.1 - - [13/Jul/2020:17:47:15 +0000] "PUT /projetoweb/ator HTTP/1.1" 401 981 http-bio-8080-exec-5 14
+127.0.0.1 - - [13/Jul/2020:17:47:20 +0000] "PUT /projetoweb/ator HTTP/1.1" 401 981 http-bio-8080-exec-7 7
+127.0.0.1 - - [13/Jul/2020:17:47:20 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 401 981 http-bio-8080-exec-9 29
+127.0.0.1 - - [13/Jul/2020:17:47:25 +0000] "GET /projetoweb/ator?id=2 HTTP/1.1" 401 975 http-bio-8080-exec-1 2
+127.0.0.1 - - [13/Jul/2020:17:49:01 +0000] "PUT /projetoweb/ator HTTP/1.1" 403 961 http-bio-8080-exec-3 26
+127.0.0.1 - - [13/Jul/2020:17:49:25 +0000] "PUT /projetoweb/ator HTTP/1.1" 204 - http-bio-8080-exec-5 353

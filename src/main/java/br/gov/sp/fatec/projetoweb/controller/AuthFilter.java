@@ -62,21 +62,13 @@ public class AuthFilter implements Filter {
                             String _password = 
                                     credentials.substring(p + 1).trim();
                             // Se nao bate com configuracao retorna erro
-                            Usuario user = usuarioDao.usernameUsuario(_username); 
-                            System.out.println("\n\n\n\n\n\nUsername enviado:"+_username);
-                            System.out.println("Senha enviado:"+_password);
-                            System.out.println("Username Banco:"+user.getLogin());
-                            System.out.println("Senha Banco:"+user.getSenha()+"\n");
-                            System.out.println("Usuario: "+user+"\n");
-                            
+                            Usuario user = usuarioDao.usernameUsuario(_username);           
                                                        
                             if(user!=null && user.getSenha().equals(_password)){
-                                System.out.println("Entrei primeiro if\n");
                                 if (!(request.getMethod().equals("DELETE") || request.getMethod().equals("PUT")))  {
                                     System.out.println("Entrei 2 if\n");
                                     chain.doFilter(req, res);
-                                }else if(_username.equals("admin") && user.getSenha().equals(_password)){
-                                    System.out.println("Entrei 3 if\n");
+                                }else if(_username.equals("admin")){
                                     chain.doFilter(req, res);
                                 }else{
                                     response.sendError(403);

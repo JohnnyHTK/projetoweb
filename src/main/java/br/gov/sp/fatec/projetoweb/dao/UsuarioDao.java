@@ -1,6 +1,7 @@
 package br.gov.sp.fatec.projetoweb.dao;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.RollbackException;
 import javax.persistence.TypedQuery;
@@ -71,7 +72,7 @@ public class UsuarioDao {
             query.setParameter("username", username);
 
             return query.getSingleResult();
-        }catch(RollbackException e) {
+        }catch(NoResultException e) {
             return null;
         }
     }
