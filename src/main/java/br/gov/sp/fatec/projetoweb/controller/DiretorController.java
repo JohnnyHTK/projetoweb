@@ -94,6 +94,7 @@ public class DiretorController extends HttpServlet {
         DiretorDao diretorDao = new DiretorDao();
         Diretor diretorInstancia = diretorDao.update(diretor); 
         diretorDao.salvar(diretorInstancia);
+        
         resp.setStatus(204);
         
         }

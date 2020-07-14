@@ -1,1 +1,2 @@
-127.0.0.1 - - [14/Jul/2020:12:59:20 +0000] "GET /projetoweb/diretor?id=6 HTTP/1.1" 200 58 http-bio-8080-exec-1 3503
+127.0.0.1 - - [14/Jul/2020:13:56:45 +0000] "PUT /projetoweb/diretor HTTP/1.1" 400 - http-bio-8080-exec-1 3724
+127.0.0.1 - - [14/Jul/2020:14:00:45 +0000] "PUT /projetoweb/diretor HTTP/1.1" 204 - http-bio-8080-exec-2 138

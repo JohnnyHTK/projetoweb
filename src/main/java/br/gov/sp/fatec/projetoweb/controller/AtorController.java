@@ -21,15 +21,15 @@ public class AtorController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {
-        // Recupera o parâmetro id (de trabalho?id=<valor>)
+
         Long id = Long.valueOf(req.getParameter("id"));
-        // Busca trabalho com o id
+
         AtorDao atorDao = new AtorDao();
         Ator ator = atorDao.buscar(id);
-        // Usamos o Jackson para transformar o objeto em um JSON (String)
+
         ObjectMapper mapper = new ObjectMapper();
         String atorJson = mapper.writeValueAsString(ator);
-        // Formatamos a resposta
+
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
         resp.setStatus(200);
@@ -41,18 +41,18 @@ public class AtorController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {
-        // Recuperamos o corpo da requisição e transformamos o JSON em objeto
+
         try{
         ObjectMapper mapper = new ObjectMapper();
         Ator ator = mapper.readValue(req.getReader(), Ator.class);
-        // Salvamos no Banco de Dados
+
         AtorDao atorDao = new AtorDao();
         atorDao.salvar(ator);
-        // Retornamos o registro gerado
+
         String atorJson = mapper.writeValueAsString(ator);
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
-        // O código 201 requer que retornemos um header de Location
+
         resp.setStatus(201);
         String location = req.getServerName() + ":" + req.getServerPort() 
                 + req.getContextPath() + "/ator?id=" + ator.getId();
@@ -94,7 +94,6 @@ public class AtorController extends HttpServlet {
         Ator atorInstancia = atorDao.update(ator); 
         atorDao.salvar(atorInstancia);
         resp.setStatus(204);
-        // Retornamos o registro gerado
         }
         catch(Exception e) {
             resp.setStatus(400);

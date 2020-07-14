@@ -18,4 +18,5 @@ br/gov/sp/fatec/projetoweb/entity/Filme.class
 br/gov/sp/fatec/projetoweb/dao/DiretorDao.class
 br/gov/sp/fatec/projetoweb/controller/AuthFilter.class
 br/gov/sp/fatec/projetoweb/controller/CorsFilter.class
+br/gov/sp/fatec/projetoweb/controller/DubleController.class
 br/gov/sp/fatec/projetoweb/dao/AtorDao.class

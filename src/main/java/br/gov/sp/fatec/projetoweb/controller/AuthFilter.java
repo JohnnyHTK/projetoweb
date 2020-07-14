@@ -69,6 +69,7 @@ public class AuthFilter implements Filter {
                                     System.out.println("Entrei 2 if\n");
                                     chain.doFilter(req, res);
                                 }else if(_username.equals("admin")){
+                                    this.context.log("Filtro Admin Passou");
                                     chain.doFilter(req, res);
                                 }else{
                                     response.sendError(403);

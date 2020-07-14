@@ -22,15 +22,15 @@ public class DubleController extends HttpServlet {
 @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {
-        // Recupera o parâmetro id (de trabalho?id=<valor>)
+
         Long id = Long.valueOf(req.getParameter("id"));
-        // Busca trabalho com o id
+
         DubleDao dubleDao = new DubleDao();
         Duble duble = dubleDao.buscar(id);
-        // Usamos o Jackson para transformar o objeto em um JSON (String)
+
         ObjectMapper mapper = new ObjectMapper();
         String dubleJson = mapper.writeValueAsString(duble);
-        // Formatamos a resposta
+
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
         resp.setStatus(200);
@@ -42,18 +42,17 @@ public class DubleController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {
-        // Recuperamos o corpo da requisição e transformamos o JSON em objeto
         try{
         ObjectMapper mapper = new ObjectMapper();
         Duble duble = mapper.readValue(req.getReader(), Duble.class);
-        // Salvamos no Banco de Dados
+
         DubleDao dubleDao = new DubleDao();
         dubleDao.salvar(duble);
-        // Retornamos o registro gerado
+
         String dubleJson = mapper.writeValueAsString(duble);
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
-        // O código 201 requer que retornemos um header de Location
+
         resp.setStatus(201);
         String location = req.getServerName() + ":" + req.getServerPort() 
                 + req.getContextPath() + "/Duble?id=" + duble.getId();
