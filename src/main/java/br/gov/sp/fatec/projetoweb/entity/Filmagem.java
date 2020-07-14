@@ -15,7 +15,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
@@ -39,7 +38,6 @@ public class Filmagem extends Main {
 			inverseJoinColumns = { @JoinColumn(name = "pes_id") })
 	private Set<Pessoa> pessoas;
     
-    @JsonIgnore
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "diretor")
 	private Diretor diretor;

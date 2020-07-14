@@ -1,6 +1,7 @@
 package br.gov.sp.fatec.projetoweb.dao;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.RollbackException;
 import javax.persistence.TypedQuery;
 
@@ -44,6 +45,11 @@ public class DiretorDao {
         else {
             manager.merge(diretor);
         }
+    }
+
+    @PersistenceContext
+    public Diretor update(Diretor diretor){
+       return manager.merge(diretor);
     }
     
     public void excluir(Long id) throws RollbackException {
