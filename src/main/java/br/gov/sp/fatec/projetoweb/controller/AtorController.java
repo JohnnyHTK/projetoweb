@@ -75,16 +75,8 @@ public class AtorController extends HttpServlet {
         AtorDao atorDao = new AtorDao();
         atorDao.excluir(ator.getId());
         
-        String atorJson = mapper.writeValueAsString(ator);
-        resp.setContentType("application/json");
-        resp.setCharacterEncoding("UTF-8");
         resp.setStatus(201);
-        String location = req.getServerName() + ":" + req.getServerPort() 
-                + req.getContextPath() + "/ator?id=" + ator.getId();
-        resp.setHeader("Location", location);
-        PrintWriter out = resp.getWriter();
-        out.print(atorJson);
-        out.flush();
+        
         }
         catch(Exception e) {
             resp.setStatus(400);
