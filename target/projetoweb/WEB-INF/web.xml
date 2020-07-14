@@ -55,5 +55,14 @@
     <url-pattern>/ator</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>BuscarDubleId</servlet-name>
+    <servlet-class>br.gov.sp.fatec.projetoweb.controller.DubleController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuscarDubleId</servlet-name>
+    <url-pattern>/duble</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>

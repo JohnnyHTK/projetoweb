@@ -1,2 +1,6 @@
-127.0.0.1 - - [14/Jul/2020:13:56:45 +0000] "PUT /projetoweb/diretor HTTP/1.1" 400 - http-bio-8080-exec-1 3724
-127.0.0.1 - - [14/Jul/2020:14:00:45 +0000] "PUT /projetoweb/diretor HTTP/1.1" 204 - http-bio-8080-exec-2 138
+127.0.0.1 - - [14/Jul/2020:15:16:47 +0000] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+127.0.0.1 - - [14/Jul/2020:15:16:56 +0000] "GET /projetoweb/duble?id=1 HTTP/1.1" 200 14 http-bio-8080-exec-4 1379
+127.0.0.1 - - [14/Jul/2020:15:16:56 +0000] "GET /projetoweb/ator?id=1 HTTP/1.1" 200 77 http-bio-8080-exec-3 4573
+127.0.0.1 - - [14/Jul/2020:15:17:04 +0000] "GET /projetoweb/duble?id=3 HTTP/1.1" 200 98 http-bio-8080-exec-6 40
+127.0.0.1 - - [14/Jul/2020:15:17:07 +0000] "GET /projetoweb/duble?id=4 HTTP/1.1" 200 86 http-bio-8080-exec-8 15
+127.0.0.1 - - [14/Jul/2020:15:17:11 +0000] "GET /projetoweb/duble?id=5 HTTP/1.1" 200 14 http-bio-8080-exec-10 29

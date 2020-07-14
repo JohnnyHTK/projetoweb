@@ -60,7 +60,7 @@
     <servlet-class>br.gov.sp.fatec.projetoweb.controller.DubleController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>BuscarAtorId</servlet-name>
+    <servlet-name>BuscarDubleId</servlet-name>
     <url-pattern>/duble</url-pattern>
   </servlet-mapping>
 
