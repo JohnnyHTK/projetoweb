@@ -55,7 +55,7 @@ public class DubleController extends HttpServlet {
 
         resp.setStatus(201);
         String location = req.getServerName() + ":" + req.getServerPort() 
-                + req.getContextPath() + "/Duble?id=" + duble.getId();
+                + req.getContextPath() + "/duble?id=" + duble.getId();
         resp.setHeader("Location", location);
         PrintWriter out = resp.getWriter();
         out.print(dubleJson);

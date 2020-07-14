@@ -5,8 +5,8 @@ br/gov/sp/fatec/projetoweb/entity/Novela.class
 br/gov/sp/fatec/projetoweb/controller/DiretorController.class
 br/gov/sp/fatec/projetoweb/entity/Usuario.class
 br/gov/sp/fatec/projetoweb/controller/AtorController.class
-br/gov/sp/fatec/projetoweb/entity/Ator.class
 br/gov/sp/fatec/projetoweb/entity/Main.class
+br/gov/sp/fatec/projetoweb/entity/Ator.class
 br/gov/sp/fatec/projetoweb/dao/PersistenceManager.class
 br/gov/sp/fatec/projetoweb/controller/MainController.class
 br/gov/sp/fatec/projetoweb/entity/Diretor.class
@@ -14,9 +14,9 @@ br/gov/sp/fatec/projetoweb/dao/FilmeDao.class
 br/gov/sp/fatec/projetoweb/dao/DubleDao.class
 br/gov/sp/fatec/projetoweb/dao/UsuarioDao.class
 br/gov/sp/fatec/projetoweb/entity/Pessoa.class
-br/gov/sp/fatec/projetoweb/dao/DiretorDao.class
 br/gov/sp/fatec/projetoweb/entity/Filme.class
+br/gov/sp/fatec/projetoweb/dao/DiretorDao.class
 br/gov/sp/fatec/projetoweb/controller/AuthFilter.class
 br/gov/sp/fatec/projetoweb/controller/CorsFilter.class
-br/gov/sp/fatec/projetoweb/dao/AtorDao.class
 br/gov/sp/fatec/projetoweb/controller/DubleController.class
+br/gov/sp/fatec/projetoweb/dao/AtorDao.class

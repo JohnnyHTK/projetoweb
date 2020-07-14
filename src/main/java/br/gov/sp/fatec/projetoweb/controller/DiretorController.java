@@ -56,7 +56,7 @@ public class DiretorController extends HttpServlet {
         // O código 201 requer que retornemos um header de Location
         resp.setStatus(201);
         String location = req.getServerName() + ":" + req.getServerPort() 
-                + req.getContextPath() + "/Diretor?id=" + diretor.getId();
+                + req.getContextPath() + "/diretor?id=" + diretor.getId();
         resp.setHeader("Location", location);
         PrintWriter out = resp.getWriter();
         out.print(DiretorJson);
