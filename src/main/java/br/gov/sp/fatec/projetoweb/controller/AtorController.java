@@ -95,16 +95,6 @@ public class AtorController extends HttpServlet {
         atorDao.salvar(atorInstancia);
         resp.setStatus(204);
         // Retornamos o registro gerado
-        String atorJson = mapper.writeValueAsString(ator);
-        resp.setContentType("application/json");
-        resp.setCharacterEncoding("UTF-8");
-        
-        String location = req.getServerName() + ":" + req.getServerPort() 
-                + req.getContextPath() + "/ator?id=" + atorInstancia.getId();
-        resp.setHeader("Location", location);
-        PrintWriter out = resp.getWriter();
-        out.print(atorJson);
-        out.flush();
         }
         catch(Exception e) {
             resp.setStatus(400);

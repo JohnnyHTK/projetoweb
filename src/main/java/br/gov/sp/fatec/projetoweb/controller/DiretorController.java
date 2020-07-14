@@ -95,17 +95,7 @@ public class DiretorController extends HttpServlet {
         Diretor diretorInstancia = diretorDao.update(diretor); 
         diretorDao.salvar(diretorInstancia);
         resp.setStatus(204);
-        // Retornamos o registro gerado
-        String DiretorJson = mapper.writeValueAsString(diretor);
-        resp.setContentType("application/json");
-        resp.setCharacterEncoding("UTF-8");
         
-        String location = req.getServerName() + ":" + req.getServerPort() 
-                + req.getContextPath() + "/Diretor?id=" + diretorInstancia.getId();
-        resp.setHeader("Location", location);
-        PrintWriter out = resp.getWriter();
-        out.print(DiretorJson);
-        out.flush();
         }
         catch(Exception e) {
             resp.setStatus(400);

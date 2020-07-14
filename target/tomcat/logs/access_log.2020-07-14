@@ -1,1 +1,1 @@
-127.0.0.1 - - [14/Jul/2020:12:45:56 +0000] "DELETE /projetoweb/diretor HTTP/1.1" 201 - http-bio-8080-exec-1 3300
+127.0.0.1 - - [14/Jul/2020:12:59:20 +0000] "GET /projetoweb/diretor?id=6 HTTP/1.1" 200 58 http-bio-8080-exec-1 3503

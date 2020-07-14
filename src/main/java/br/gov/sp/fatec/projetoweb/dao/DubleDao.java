@@ -1,6 +1,7 @@
 package br.gov.sp.fatec.projetoweb.dao;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.RollbackException;
 import javax.persistence.TypedQuery;
 
@@ -44,7 +45,12 @@ public class DubleDao {
             manager.merge(duble);
         }
     }
-	
+    
+    @PersistenceContext
+    public Duble update(Duble duble){
+       return manager.merge(duble);
+    }
+
     public void excluir(Long id) throws RollbackException {
         Duble duble = manager.find(Duble.class, id);
         try {
