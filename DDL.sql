@@ -10,23 +10,25 @@ create table usr_usuario(
     usr_id bigint unsigned primary key auto_increment,
     usr_login varchar(50),
     usr_senha varchar(50),
+    usr_auth varchar(1),
     constraint use_login_uk unique (usr_login)
 );
 
-INSERT INTO usr_usuario (usr_login, usr_senha)
-VALUES ("admin","123");
+INSERT INTO usr_usuario (usr_login, usr_senha,usr_auth)
+VALUES ("admin","123","A");
 
-INSERT INTO usr_usuario (usr_login, usr_senha)
-VALUES ("jonathan","123");
+INSERT INTO usr_usuario (usr_login, usr_senha,usr_auth)
+VALUES ("jonathan","123","U");
 
-INSERT INTO usr_usuario (usr_login, usr_senha)
-VALUES ("lucas","123");
+INSERT INTO usr_usuario (usr_login, usr_senha,usr_auth)
+VALUES ("lucas","123","U");
 
-INSERT INTO usr_usuario (usr_login, usr_senha)
-VALUES ("hercules","123");
+INSERT INTO usr_usuario (usr_login, usr_senha,usr_auth)
+VALUES ("hercules","123","A");
 
-INSERT INTO usr_usuario (usr_login, usr_senha)
-VALUES ("victor","123");
+INSERT INTO usr_usuario (usr_login, usr_senha,usr_auth)
+VALUES ("victor","123","U");
+
 
 create table pes_pessoa(
 	pes_id bigint unsigned primary key auto_increment,
