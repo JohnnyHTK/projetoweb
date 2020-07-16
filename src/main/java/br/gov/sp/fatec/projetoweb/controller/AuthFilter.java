@@ -68,7 +68,7 @@ public class AuthFilter implements Filter {
                                 if (!(request.getMethod().equals("DELETE") || request.getMethod().equals("PUT")))  {
                                     System.out.println("Entrei 2 if\n");
                                     chain.doFilter(req, res);
-                                }else if(_username.equals("admin")){
+                                }else if(user.getAuth().equals("A")){
                                     this.context.log("Filtro Admin Passou");
                                     chain.doFilter(req, res);
                                 }else{

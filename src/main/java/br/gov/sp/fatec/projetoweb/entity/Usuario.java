@@ -18,6 +18,17 @@ public class Usuario extends Main{
 	@Column(name = "usr_senha")
     private String senha;
 
+    @Column(name="usr_auth")
+    private String auth;
+
+    public void setAuth(String auth) {
+        this.auth = auth;
+    }
+
+    public String getAuth() {
+        return auth;
+    }
+
     public void setLogin(String login) {
         this.login = login;
     }
@@ -25,6 +36,7 @@ public class Usuario extends Main{
     public String getLogin() {
         return login;
     }
+
 
     public void setSenha(String senha) {
         this.senha = senha;
