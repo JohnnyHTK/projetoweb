@@ -1,51 +1,16 @@
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","02429130099","T");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Hop Bowman","29949872899","T");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Preston Bailey","18252066499","T");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Connor Hays","53538461799","T");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Damian George","27870155399","T");
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","02429130099","T"), ("Hop Bowman","29949872899","T"), ("Preston Bailey","18252066499","T"), ("Connor Hays","53538461799","T"), ("Damian George","27870155399","T");
+
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Owen Simpson","16795546299","A","Musica"), ("Cairo Head","45516724899","A","Musica"), ("Tyler Briggs","38314493399","A","Musica"), ("Clark Knox","47725317999","A","Musica"), ("Aladdin Irwin","48361232399","A","Musica");
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Abdul Mccray","39774355799","A","Teatro"), ("Kareem Hyde","74229628099","A","Teatro"), ("Beck Berg","43302315599","A","Teatro"), ("Erich Waters","68470720599","A","Teatro"), ("Christopher Stark","42446110799","A","Teatro");
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Quinlan Levine","20774908199","A","Dança"), ("Knox Ayala","92563485999","A","Dança"), ("Quentin French","37725918799","A","Dança"), ("Ashton Mcgee","34583196199","A","Dança"), ("Wallace Nelson","33544063799","A","Dança");
+
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Kennan Black","80854941099","D","Defesa Pessoal"), ("Joel Camacho","20545039799","D","Defesa Pessoal"), ("Louis Mccray","51455458499","D","Defesa Pessoal"), ("Kenneth Wolfe","75319907999","D","Defesa Pessoal"), ("Hakeem Sweet","71786288799","D","Defesa Pessoal");
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Cameron Stanley","25494235199","D","Direção Automobilistica"),("Stewart Smith","90575932699","D","Direção Automobilistica"), ("Malik Ball","11657387299","D","Direção Automobilistica"), ("Joshua Wood","20491969599","D","Direção Automobilistica"), ("Damon Gallagher","02752005499","D","Direção Automobilistica");
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Neville Keller","57244884899","D","Defesa Pessoal"), ("Clarke Stark","27820267199","D","Defesa Pessoal"), ("Kennedy Franco","33832283899","D","Defesa Pessoal"), ("Flynn May","93250208199","D","Defesa Pessoal"), ("Omar Gutierrez","00645656299","D","Defesa Pessoal");
 
 
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Owen Simpson","16795546299","A","Musica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Cairo Head","45516724899","A","Musica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Tyler Briggs","38314493399","A","Musica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Clark Knox","47725317999","A","Musica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Aladdin Irwin","48361232399","A","Musica");
-    
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Abdul Mccray","39774355799","A","Teatro");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Kareem Hyde","74229628099","A","Teatro");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Beck Berg","43302315599","A","Teatro");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Erich Waters","68470720599","A","Teatro");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Christopher Stark","42446110799","A","Teatro");
-
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Quinlan Levine","20774908199","A","Dança");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Knox Ayala","92563485999","A","Dança");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Quentin French","37725918799","A","Dança");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Ashton Mcgee","34583196199","A","Dança");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Wallace Nelson","33544063799","A","Dança");
-
-
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Kennan Black","80854941099","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Joel Camacho","20545039799","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Louis Mccray","51455458499","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Kenneth Wolfe","75319907999","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Hakeem Sweet","71786288799","D","Defesa Pessoal");
-
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Cameron Stanley","25494235199","D","Direção Automobilistica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Stewart Smith","90575932699","D","Direção Automobilistica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Malik Ball","11657387299","D","Direção Automobilistica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Joshua Wood","20491969599","D","Direção Automobilistica");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Damon Gallagher","02752005499","D","Direção Automobilistica");
-
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Neville Keller","57244884899","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Clarke Stark","27820267199","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Kennedy Franco","33832283899","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Flynn May","93250208199","D","Defesa Pessoal");
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Omar Gutierrez","00645656299","D","Defesa Pessoal");
-
-
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("pharetra nibh. Aliquam ornare,","2121-04-30",2,1);
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("mi lorem, vehicula et,","2020-04-16",4,1);
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("pede. Cum sociis natoque","2020-06-15",2,1);
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue scelerisque mollis. Phasellus","2020-10-26",2,1);
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("Aenean gravida nunc sed","2020-07-14",4,1);
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("Curabitur vel lectus. Cum","2121-05-30",2,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue ut lacus. Nulla","1919-10-09",4,1),("tortor. Integer aliquam adipiscing","2121-02-22",4,1),("Aenean egestas hendrerit neque.","2121-02-06",4,1),("dignissim lacus. Aliquam rutrum","2121-07-08",3,1),("felis ullamcorper viverra. Maecenas","2020-07-12",3,1),("vitae, orci. Phasellus dapibus","1919-09-23",4,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("Nullam scelerisque neque sed","2121-02-25",3,2),("sem eget massa. Suspendisse","2020-02-04",4,2),("auctor vitae, aliquet nec,","2020-05-12",3,2),("fringilla euismod enim. Etiam","2020-01-06",4,2),("ultrices a, auctor non,","1919-10-21",4,2);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("ac risus. Morbi metus.","2020-08-06",3,3),("vel est tempor bibendum.","2020-04-09",4,3),("egestas hendrerit neque. In","2121-06-14",4,3),("at fringilla purus mauris","2020-10-05",4,3),("semper rutrum. Fusce dolor","1919-10-01",2,3),("dictum placerat, augue. Sed","2020-03-21",4,3),("Quisque imperdiet, erat nonummy","1919-10-21",4,3),("neque. Morbi quis urna.","2121-05-24",4,3),("dui, nec tempus mauris","2020-02-26",3,3),("in aliquet lobortis, nisi","2020-12-22",3,3);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("id, erat. Etiam vestibulum","2020-05-11",2,4),("Nulla tempor augue ac","2121-04-02",3,4),("ultrices posuere cubilia Curae;","2121-05-13",4,4),("Suspendisse sed dolor. Fusce","2020-11-11",3,4),("enim, condimentum eget, volutpat","2121-01-31",4,4),("ante ipsum primis in","1919-10-17",2,4),("Vestibulum ut eros non","2020-11-22",3,4);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("at, nisi. Cum sociis","2121-09-05",4,5),("fermentum convallis ligula. Donec","2121-04-14",4,5),("ac mattis velit justo","2020-05-31",3,5),("a, magna. Lorem ipsum","1919-12-11",4,5);
