@@ -1,11 +1,10 @@
-    --Diretor
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","02429130099","T");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Hop Bowman","29949872899","T");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Preston Bailey","18252066499","T");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Connor Hays","53538461799","T");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Damian George","27870155399","T");
 
-    --ator
+
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Owen Simpson","16795546299","A","Musica");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Cairo Head","45516724899","A","Musica");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Tyler Briggs","38314493399","A","Musica");
@@ -24,7 +23,7 @@
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Ashton Mcgee","34583196199","A","Dança");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Wallace Nelson","33544063799","A","Dança");
 
-    --duble
+
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Kennan Black","80854941099","D","Defesa Pessoal");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Joel Camacho","20545039799","D","Defesa Pessoal");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Louis Mccray","51455458499","D","Defesa Pessoal");
