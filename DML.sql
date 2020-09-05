@@ -41,3 +41,11 @@
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Kennedy Franco","33832283899","D","Defesa Pessoal");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Flynn May","93250208199","D","Defesa Pessoal");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,dub_especialidade) VALUES ("Omar Gutierrez","00645656299","D","Defesa Pessoal");
+
+
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("pharetra nibh. Aliquam ornare,","2121-04-30",2,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("mi lorem, vehicula et,","2020-04-16",4,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("pede. Cum sociis natoque","2020-06-15",2,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue scelerisque mollis. Phasellus","2020-10-26",2,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("Aenean gravida nunc sed","2020-07-14",4,1);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("Curabitur vel lectus. Cum","2121-05-30",2,1);
