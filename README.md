@@ -1,7 +1,7 @@
 <img src="image/logo_fatecsjc.png" height=150px>
 
 # Laboratorio de projeto de Banco de dados
-Projeto sobre desenvolvido nas aulas de laboratorio de projeto de Banco de dados da Fatec SJC.
+Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores, diretores, dublês, e diferentes categorias de filmes.
 
 ## Integrantes: 
 - Carlos Henrique Monteiro Neto
@@ -12,19 +12,13 @@ Projeto sobre desenvolvido nas aulas de laboratorio de projeto de Banco de dados
 
 ## Tecnologias utilizadas:
 - [<img src="image\mysql.png" height=40px>](https://www.mysql.com//) MySQL
+- [<img src="image\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
+- [<img src="image\hibernate.png" height=40px>](https://hibernate.org/) Hibernate
 
 # Sprints anteriores
 - [Sprint 1: Backend + Frontend + BD para iniciar o desenvolvimento](https://github.com/JohnnyHTK/projetoweb)
 
-- [Sprint 2: ]()
-
-- [Sprint 3: ]()
-
-- [Sprint 4: ]()
-
-- [Sprint 5: ]()
-
-# Sprint 6: Entrega final
+# Sprint 2: Em desenvolvimento
 Nessa sprint foi atualizado ...
 
 # Instalação e execução
