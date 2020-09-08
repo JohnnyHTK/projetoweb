@@ -23,7 +23,7 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 Nessa sprint foi atualizado ...
 
 # Instalação e execução
-Para a execução do projeto, é necessaria a instalação do [Apache Maven](#tecnologias-utilizadas), [MySql](#tecnologias-utilizadas) e JAVA(#tecnologias-utilizadas).
+Para a execução do projeto, é necessaria a instalação do [Apache Maven](#tecnologias-utilizadas), [MySql](#tecnologias-utilizadas) e JAVA (#tecnologias-utilizadas).
 ### 1 - Instale as dependências do projeto
 > mvn clean package
 ### 2 - Iniciar a aplicação
