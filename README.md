@@ -17,7 +17,7 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="image\hibernate.png" height=40px>](https://hibernate.org/) Hibernate
 
 # Sprints anteriores
-- [Sprint 1: Backend + Frontend + BD para iniciar o desenvolvimento](https://github.com/JohnnyHTK/projetoweb)
+- [Sprint 1: Backend + BD para iniciar o desenvolvimento + Documentação](https://github.com/JohnnyHTK/projetoweb)
 
 # Sprint 2: Em desenvolvimento
 Nessa sprint foi atualizado ...
